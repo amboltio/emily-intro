@@ -22,10 +22,10 @@
 },
 {
 	"uri": "https://amboltio.github.io/emily-intro/emily-intro/",
-	"title": "Emily intro",
+	"title": "Getting started with Emily",
 	"tags": [],
 	"description": "",
-	"content": "Emily intro Emily is an AI platform that can help you setup, develop, and deploy AI microservices.\n"
+	"content": "Getting started with Emily This guide will show you how to install Emily, how to create and get started with your first project, and finally how to share an Emily project with collaborators.\n"
 },
 {
 	"uri": "https://amboltio.github.io/emily-intro/emily-intro/build/",
@@ -60,7 +60,7 @@
 	"title": "Deploying a service",
 	"tags": [],
 	"description": "",
-	"content": "Deploying a service AI services running on your own computer can be fun, but in order to let other people use them and actually make an impact, you must deploy them.\n"
+	"content": "Deploying a service AI services running on your own computer can be fun, but in order to let other people use them and actually make an impact, you must deploy them. This guide will show you how to take a finished Emily project and deploy it.\n"
 },
 {
 	"uri": "https://amboltio.github.io/emily-intro/deploy/deploy/",
@@ -144,7 +144,7 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": "Emily Welcome to this Emily website\n"
+	"content": "Emily Emily is an AI platform that can help you setup, develop, and deploy AI microservices. On this page you will find guides that teach you how to get started with your very first Emily project as well as how to deploy your project as a microservice once you have finished developing it.\n"
 },
 {
 	"uri": "https://amboltio.github.io/emily-intro/categories/",
