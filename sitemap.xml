@@ -3,117 +3,117 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/emily-intro/structure/api/</loc>
+    <loc>https://amboltio.github.io/emily-intro/emily-intro/structure/api/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/deploy/structure/</loc>
+    <loc>https://amboltio.github.io/emily-intro/deploy/structure/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/emily-intro/install/</loc>
+    <loc>https://amboltio.github.io/emily-intro/emily-intro/install/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/emily-intro/</loc>
+    <loc>https://amboltio.github.io/emily-intro/emily-intro/</loc>
     <lastmod>2021-09-27T09:39:54+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/emily-intro/build/</loc>
+    <loc>https://amboltio.github.io/emily-intro/emily-intro/build/</loc>
     <lastmod>2021-09-27T09:50:36+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/deploy/structure/api/</loc>
+    <loc>https://amboltio.github.io/emily-intro/deploy/structure/api/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/deploy/test/</loc>
+    <loc>https://amboltio.github.io/emily-intro/deploy/test/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/emily-intro/structure/emily/</loc>
+    <loc>https://amboltio.github.io/emily-intro/emily-intro/structure/emily/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/deploy/</loc>
+    <loc>https://amboltio.github.io/emily-intro/deploy/</loc>
     <lastmod>2021-09-27T09:39:54+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/deploy/deploy/</loc>
+    <loc>https://amboltio.github.io/emily-intro/deploy/deploy/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/deploy/structure/model/</loc>
+    <loc>https://amboltio.github.io/emily-intro/deploy/structure/model/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/emily-intro/structure/model/</loc>
+    <loc>https://amboltio.github.io/emily-intro/emily-intro/structure/model/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/emily-intro/structure/</loc>
+    <loc>https://amboltio.github.io/emily-intro/emily-intro/structure/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/emily-intro/share/</loc>
+    <loc>https://amboltio.github.io/emily-intro/emily-intro/share/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/emily-intro/structure/trainer/</loc>
+    <loc>https://amboltio.github.io/emily-intro/emily-intro/structure/trainer/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/deploy/structure/train/</loc>
+    <loc>https://amboltio.github.io/emily-intro/deploy/structure/train/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/deploy/structure/eval/</loc>
+    <loc>https://amboltio.github.io/emily-intro/deploy/structure/eval/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/emily-intro/structure/evaluator/</loc>
+    <loc>https://amboltio.github.io/emily-intro/emily-intro/structure/evaluator/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/deploy/structure/predict/</loc>
+    <loc>https://amboltio.github.io/emily-intro/deploy/structure/predict/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/emily-intro/structure/predictor/</loc>
+    <loc>https://amboltio.github.io/emily-intro/emily-intro/structure/predictor/</loc>
     <lastmod>2021-09-27T09:50:28+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://amboltio.github.io/emily-intro/</loc>
     <lastmod>2021-09-27T09:50:36+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://amboltio.github.io/emily-intro/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://amboltio.github.io/emily-intro/tags/</loc>
   </url>
   
 </urlset>
