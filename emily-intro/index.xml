@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emily intro on Emily</title>
-    <link>https://amboltio.github.io/emily-intro/emily-intro/</link>
+    <link>http://example.org/emily-intro/</link>
     <description>Recent content in Emily intro on Emily</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Sep 2021 09:39:54 +0200</lastBuildDate>
     
-	<atom:link href="https://amboltio.github.io/emily-intro/emily-intro/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.org/emily-intro/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Install Emily</title>
-      <link>https://amboltio.github.io/emily-intro/emily-intro/install/</link>
+      <link>http://example.org/emily-intro/install/</link>
       <pubDate>Mon, 27 Sep 2021 09:50:28 +0200</pubDate>
       
-      <guid>https://amboltio.github.io/emily-intro/emily-intro/install/</guid>
+      <guid>http://example.org/emily-intro/install/</guid>
       <description>This guide will show you how to install Emily.
 Windows MacOS Ubuntu  First download the newest Emily release here. Run the emily-installer.exe file, which will present you with an installation wizard. Go through the steps of the installation wizard to finish the installation. During the installation, you will be asked about additional items to setup. Emily needs Docker and Visual Studio Code in order to work. You can choose to let Emily install them for you, or you can install them yourself if you prefer.</description>
     </item>
     
     <item>
       <title>Create Emily project</title>
-      <link>https://amboltio.github.io/emily-intro/emily-intro/build/</link>
+      <link>http://example.org/emily-intro/build/</link>
       <pubDate>Mon, 27 Sep 2021 09:50:36 +0200</pubDate>
       
-      <guid>https://amboltio.github.io/emily-intro/emily-intro/build/</guid>
+      <guid>http://example.org/emily-intro/build/</guid>
       <description>An Emily project consists of a template, which is a number of Python files with boilerplate code that you can fill out and customise, and a Docker container, which is a virtual environment where software and libraries for machine learning are already installed. Emily makes sure that each project is run inside its own Docker container, which means that you do not need to install any machine learning software on your own computer.</description>
     </item>
     
     <item>
       <title>Share Emily projects</title>
-      <link>https://amboltio.github.io/emily-intro/emily-intro/share/</link>
+      <link>http://example.org/emily-intro/share/</link>
       <pubDate>Mon, 27 Sep 2021 09:50:28 +0200</pubDate>
       
-      <guid>https://amboltio.github.io/emily-intro/emily-intro/share/</guid>
+      <guid>http://example.org/emily-intro/share/</guid>
       <description>When working in a team, it is important that machine learning projects can be shared among team members. Emily supports easy sharing of projects, and integrates with version control software such as git. Since Emily projects are run in Docker containers, you do not need to worry about having the correct libraries or versions installed on the computer of each team member, because Emily makes sure to start the project in a container which has all the required libraries installed.</description>
     </item>
     
