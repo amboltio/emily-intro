@@ -13,20 +13,20 @@
     <title>API test :: Emily</title>
 
     
-    <link href="/emily-intro/css/nucleus.css?1634807278" rel="stylesheet">
-    <link href="/emily-intro/css/fontawesome-all.min.css?1634807278" rel="stylesheet">
-    <link href="/emily-intro/css/hybrid.css?1634807278" rel="stylesheet">
-    <link href="/emily-intro/css/featherlight.min.css?1634807278" rel="stylesheet">
-    <link href="/emily-intro/css/perfect-scrollbar.min.css?1634807278" rel="stylesheet">
-    <link href="/emily-intro/css/auto-complete.css?1634807278" rel="stylesheet">
-    <link href="/emily-intro/css/atom-one-dark-reasonable.css?1634807278" rel="stylesheet">
-    <link href="/emily-intro/css/theme.css?1634807278" rel="stylesheet">
-    <link href="/emily-intro/css/tabs.css?1634807278" rel="stylesheet">
-    <link href="/emily-intro/css/hugo-theme.css?1634807278" rel="stylesheet">
+    <link href="/emily-intro/css/nucleus.css?1634807478" rel="stylesheet">
+    <link href="/emily-intro/css/fontawesome-all.min.css?1634807478" rel="stylesheet">
+    <link href="/emily-intro/css/hybrid.css?1634807478" rel="stylesheet">
+    <link href="/emily-intro/css/featherlight.min.css?1634807478" rel="stylesheet">
+    <link href="/emily-intro/css/perfect-scrollbar.min.css?1634807478" rel="stylesheet">
+    <link href="/emily-intro/css/auto-complete.css?1634807478" rel="stylesheet">
+    <link href="/emily-intro/css/atom-one-dark-reasonable.css?1634807478" rel="stylesheet">
+    <link href="/emily-intro/css/theme.css?1634807478" rel="stylesheet">
+    <link href="/emily-intro/css/tabs.css?1634807478" rel="stylesheet">
+    <link href="/emily-intro/css/hugo-theme.css?1634807478" rel="stylesheet">
     
     
 
-    <script src="/emily-intro/js/jquery-3.3.1.min.js?1634807278"></script>
+    <script src="/emily-intro/js/jquery-3.3.1.min.js?1634807478"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -71,14 +71,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/emily-intro/js/lunr.min.js?1634807278"></script>
-<script type="text/javascript" src="/emily-intro/js/auto-complete.js?1634807278"></script>
+<script type="text/javascript" src="/emily-intro/js/lunr.min.js?1634807478"></script>
+<script type="text/javascript" src="/emily-intro/js/auto-complete.js?1634807478"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/amboltio.github.io\/emily-intro\/";
     
 </script>
-<script type="text/javascript" src="/emily-intro/js/search.js?1634807278"></script>
+<script type="text/javascript" src="/emily-intro/js/search.js?1634807478"></script>
 
     
   </div>
@@ -707,19 +707,19 @@
 
 Emily projects use FastAPI, which automatically supports Swagger UI. This gives you automatic documentation of your API, as well as a graphical interface for testing the API. To access Swagger UI, go to <a href="http://localhost:4242/docs", target="_blank">http://localhost:4242/docs</a> in your browser, where you will see something similar to the below image.
 
-<img src="/images/swaggerui/swaggerui.png", alt="Swagger UI">
+<img src="/emily-intro/images/swaggerui/swaggerui.png", alt="Swagger UI">
 
 To test e.g. the evaluate endpoint, click its bar. It will then unfold, giving you a lot of information about the endpoint, such as the format of a request to the endpoint and the possible responses it can give. In order to test it, click the "Try it out" button.
 
-<img src="/images/swaggerui/tryit.png", alt="Try it out button">
+<img src="/emily-intro/images/swaggerui/tryit.png", alt="Try it out button">
 
 Now you will be able to edit the request body before sending the request. Make appropriate changes, such as changing the path to the model being evaluated, and click the "Execute" button below the text field.
 
-<img src="/images/swaggerui/execute.png", alt="Execute button">
+<img src="/emily-intro/images/swaggerui/execute.png", alt="Execute button">
 
 You will then get the result of the endpoint in a section below. In this case, the result is an evaluation score for the specified model.
 
-<img src="/images/swaggerui/result.png", alt="Result being displayed">
+<img src="/emily-intro/images/swaggerui/result.png", alt="Result being displayed">
 
 
         </div>
@@ -729,18 +729,18 @@ You will then get the result of the endpoint in a section below. In this case, t
 
 Postman is a standalone app that can be downloaded <a href="https://www.postman.com/downloads/", target="_blank">here</a>. Start Postman and create a new request. Choose a POST request, and enter <code>http://localhost:4242</code> as the request URL.
 
-<img src="/images/postman/request.png", alt="Making a new request">
+<img src="/emily-intro/images/postman/request.png", alt="Making a new request">
 
 Next we need to specify the body of the request. To do this, press the "Body" button below the URL field and choose the "raw" option below it. This allows you to specify the request body in JSON format in the text field below. For example, to specify the model path, enter
 <code>{
     "model_path": "myModel.save"
 }</code>
 
-<img src="/images/postman/body.png", alt="Making a new request">
+<img src="/emily-intro/images/postman/body.png", alt="Making a new request">
 
 Now you can simply press the "Send" button, and the request will be sent to the API and a response will be shown at the bottom of the window. In this case the response is an evaluation score for the specified model.
 
-<img src="/images/postman/response.png", alt="Response from the API">
+<img src="/emily-intro/images/postman/response.png", alt="Response from the API">
 
 
         </div>
@@ -1154,19 +1154,19 @@ For example, to call the evaluate endpoint with a specific model, you can use<br
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/emily-intro/js/clipboard.min.js?1634807278"></script>
-    <script src="/emily-intro/js/perfect-scrollbar.min.js?1634807278"></script>
-    <script src="/emily-intro/js/perfect-scrollbar.jquery.min.js?1634807278"></script>
-    <script src="/emily-intro/js/jquery.sticky.js?1634807278"></script>
-    <script src="/emily-intro/js/featherlight.min.js?1634807278"></script>
-    <script src="/emily-intro/js/highlight.pack.js?1634807278"></script>
+    <script src="/emily-intro/js/clipboard.min.js?1634807478"></script>
+    <script src="/emily-intro/js/perfect-scrollbar.min.js?1634807478"></script>
+    <script src="/emily-intro/js/perfect-scrollbar.jquery.min.js?1634807478"></script>
+    <script src="/emily-intro/js/jquery.sticky.js?1634807478"></script>
+    <script src="/emily-intro/js/featherlight.min.js?1634807478"></script>
+    <script src="/emily-intro/js/highlight.pack.js?1634807478"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/emily-intro/js/modernizr.custom-3.6.0.js?1634807278"></script>
-    <script src="/emily-intro/js/learn.js?1634807278"></script>
-    <script src="/emily-intro/js/hugo-learn.js?1634807278"></script>
+    <script src="/emily-intro/js/modernizr.custom-3.6.0.js?1634807478"></script>
+    <script src="/emily-intro/js/learn.js?1634807478"></script>
+    <script src="/emily-intro/js/hugo-learn.js?1634807478"></script>
     
         
-            <script src="/emily-intro/mermaid/mermaid.js?1634807278"></script>
+            <script src="/emily-intro/mermaid/mermaid.js?1634807478"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
