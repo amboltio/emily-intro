@@ -239,3 +239,18 @@ figcaption h4 {
 .is-sticky #top-bar {
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.1); 
 }
+
+.bottom {
+    width:100%;
+    position: absolute;
+    bottom:20px;
+    text-align:center;
+}
+
+.bottom-image {
+    width:75%;
+    height:auto;
+    position: relative;
+    display: block;
+    float: center;
+}

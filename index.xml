@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Emily</title>
+    <title>Home on Emily</title>
     <link>https://amboltio.github.io/emily-intro/</link>
-    <description>Recent content on Emily</description>
+    <description>Recent content in Home on Emily</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Sep 2021 09:50:36 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 27 Sep 2021 09:39:54 +0200</lastBuildDate>
     
 	<atom:link href="https://amboltio.github.io/emily-intro/index.xml" rel="self" type="application/rss+xml" />
     

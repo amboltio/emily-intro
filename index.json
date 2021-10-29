@@ -28,6 +28,13 @@
 	"content": "Getting started with Emily This guide will show you how to install Emily, how to create and get started with your first project, and finally how to share an Emily project with collaborators.\n"
 },
 {
+	"uri": "https://amboltio.github.io/emily-intro/",
+	"title": "Home",
+	"tags": [],
+	"description": "",
+	"content": "Emily Emily is an AI platform that can help you setup, develop, and deploy AI microservices. On this page you will find guides that teach you how to get started with your very first Emily project as well as how to deploy your project as a microservice once you have finished developing it.\n"
+},
+{
 	"uri": "https://amboltio.github.io/emily-intro/emily-intro/build/",
 	"title": "Create Emily project",
 	"tags": [],
@@ -138,13 +145,6 @@
 	"tags": [],
 	"description": "",
 	"content": "The predictor implements the behaviour for using a model to make a prediction based on a sample. The steps for doing so are the following:\n Load the model Preprocess the sample Make the prediction Postprocess the prediction  1. Load the model In order to load the model, use the load_model method on the model class. Here is how this is done by default in the template:\nif model_path != self.model_path: self.model = Model() self.model.load_model(model_path) self.model_path = model_path 2. Preprocess the sample Preprocessing must be implemented in the _preprocess method. For example, this could involve doing a label encoding for string values:\ndef _preprocess(self, sample): if sample == \u0026#34;low\u0026#34;: return 0 if sample == \u0026#34;medium\u0026#34;: return 1 if sample == \u0026#34;high\u0026#34;: return 2 3. Make the prediction Making a prediction is done in the predict method by simply forwarding the sample to the model:\nprediction = self.model(preprocessed_sample) 4. Postprocess the prediction Finally, it may be beneficial or necessary to make some adjustments to the prediction before sending it as a response to the API request. For example, this could involve unpacking the result from a numpy array and adding a dollar sign to show the unit and currency of the result:\ndef _postprocess(self, prediction): return \u0026#34;$\u0026#34; + str(prediction[0][0]) "
-},
-{
-	"uri": "https://amboltio.github.io/emily-intro/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": "Emily Emily is an AI platform that can help you setup, develop, and deploy AI microservices. On this page you will find guides that teach you how to get started with your very first Emily project as well as how to deploy your project as a microservice once you have finished developing it.\n"
 },
 {
 	"uri": "https://amboltio.github.io/emily-intro/categories/",
