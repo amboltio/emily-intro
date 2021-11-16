@@ -244,13 +244,9 @@ figcaption h4 {
     width:100%;
     position: absolute;
     bottom:20px;
-    text-align:center;
 }
 
 .bottom-image {
     width:75%;
     height:auto;
-    position: relative;
-    display: block;
-    float: center;
 }

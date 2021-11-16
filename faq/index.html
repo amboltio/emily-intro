@@ -10,7 +10,7 @@
 
     <link rel="icon" href="/emily-intro/images/favicon.png" type="image/png">
 
-    <title>Deploy :: Emily</title>
+    <title>FAQ :: Emily</title>
 
     
     <link href="/emily-intro/css/nucleus.css?1637051774" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/emily-intro/deploy/deploy/">
+  <body class="" data-url="/emily-intro/faq/">
     <nav id="sidebar" class="">
 
 
@@ -367,7 +367,7 @@
   
     
     <li data-nav-id="/emily-intro/deploy/" title="Deploying a service" class="dd-item
-        parent
+        
         
         
         ">
@@ -557,7 +557,7 @@
  
   
     
-      <li data-nav-id="/emily-intro/deploy/deploy/" title="Deploy" class="dd-item active">
+      <li data-nav-id="/emily-intro/deploy/deploy/" title="Deploy" class="dd-item ">
         <a href="/emily-intro/deploy/deploy/">
         Deploy
         
@@ -586,8 +586,8 @@
   
     
     <li data-nav-id="/emily-intro/faq/" title="FAQ" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/emily-intro/faq/">
@@ -634,8 +634,6 @@
                         </a>
                     </span>
                   
-                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
-                  
                   <span class="links">
                  
                  
@@ -646,13 +644,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/emily-intro/'>Home</a> > <a href='/emily-intro/deploy/'>Deploying a service</a> > Deploy
-          
-        
+            <a href='/emily-intro/'>Home</a> > FAQ
           
         
           
@@ -661,13 +653,6 @@
                   </span>
                 </div>
                 
-                    <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents"></nav>
-    </div>
-</div>
-
-                
               </div>
             </div>
             
@@ -675,41 +660,60 @@
         
         </div>
         
+          <div id="chapter">
+        
         <div id="body-inner">
-          
-            <h1>
-              
-              Deploy
-            </h1>
           
 
         
 
 
 
-<div style="position: relative; padding-bottom: 50%; height: 0;">
-    
-    
-    <iframe src="https://panopto.aau.dk/Panopto/Pages/Embed.aspx?id=514ebe19-8664-425a-b284-adc000c3112c&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all"
-    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+	<h1 id="faq">FAQ</h1>
+<h2 id="q-how-do-i-add-debian-packages-to-my-project">Q: How do I add Debian packages to my project?</h2>
+<p>To add a Debian package to your Emily project, follow these steps:</p>
+<ol>
+<li>Locate the directory of your project. If you are unsure where you put your Emily project, you can use the command <code>emily list -f</code> to view all your projects. The location of each project will be shown in the &ldquo;PATH&rdquo; column.</li>
+<li>Open the project&rsquo;s Dockerfile.
+<ul>
+<li>If you are using VS Code, this is located in the .devcontainer folder.</li>
+<li>If you are using PyCharm, this is located in the .idea folder.</li>
+<li>If you are using Jupyter, this is located in the .jupyter folder.</li>
+</ul>
+</li>
+<li>Insert the command <code>RUN apt-get -y update &amp;&amp; apt-get install -y &lt;package name&gt;</code> in the Dockerfile just below the line that says &ldquo;# add installation of Debian packages here&rdquo;.
+<ul>
+<li>For example, add <code>RUN apt-get -y update &amp;&amp; apt-get install -y git</code> if you want to add git to your project.</li>
+<li>You can also add more than one package at a time. If you want both GCC and CMake, add <code>RUN apt-get -y update &amp;&amp; apt-get install -y gcc cmake</code> to the Dockerfile.</li>
+<li>Some packages are not directly available with apt-get and must be downloaded first. For example, to install nodejs in your Emily project, first use curl to download it and then apt-get to install, by adding the following to your Dockerfile:</li>
+</ul>
+<pre><code>RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - 
+RUN apt-get -y update &amp;&amp; apt-get install -y nodejs
+</code></pre></li>
+<li>Open your project with the <code>emily open &lt;project name&gt;</code> command.</li>
+</ol>
+<p>For more information about modifying the Dockerfile, check out the <a href="https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run">Docker documentation</a>.</p>
+<h2 id="q-how-do-i-make-emily-detect-my-pycharm-professional-installation">Q: How do I make Emily detect my PyCharm professional installation?</h2>
+<p>If you experience this issue on Windows, it is most likely because Emily cannot find the PyCharm installation in your PATH environment variable. You can use <a href="https://stackoverflow.com/questions/44272416/how-to-add-a-folder-to-path-environment-variable-in-windows-10-with-screensho">this guide</a> to add the folder containing your PyCharm installation to the PATH variable.</p>
+<p>If you have installed PyCharm using JetBrains toolbox, you will have to setup the command-line interface version by following <a href="https://www.jetbrains.com/help/idea/working-with-the-ide-features-from-command-line.html">this guide</a>.</p>
+<p><strong>Note:</strong> Emily expects PyCharm professional to be on a path that includes a folder named &ldquo;JetBrains&rdquo;. If the path to your PyCharm folder does not contain a &ldquo;JetBrains&rdquo; folder, Emily will not be able to find it.</p>
+<h2 id="q-i-get-an-error-when-running-brew-cleanup-how-do-i-fix-this">Q: I get an error when running brew cleanup. How do I fix this?</h2>
+<p>This is a known issue with brew. The most likely fix is to run</p>
+<pre><code>sudo chown -R $(whoami):admin /usr/local/* \
+&amp;&amp; sudo chmod -R g+rwx /usr/local/*
+</code></pre><p>to reset the permissions in /usr/local. You can then reinstall packages by running <code>brew list | xargs brew reinstall</code>.</p>
+<p>If this does not fix your issue, see <a href="https://github.com/Homebrew/homebrew-core/issues/45009">this thread</a> for other possible solutions.</p>
 
-</iframe>
-
-</div>
-
-<p>Deploying a service involves hosting it on a server or similar where it can be accessed by clients, apps, or other services. Once you have a server setup that you want to deploy to, Emily can help you with the actual deployment.</p>
-<p>To deploy, run <code>emily deploy server &lt;project name&gt;</code>. First you will be asked which file to run when deployed. For Emily projects this is usually <code>api.py</code>. Next you must choose whether to use GPU functionality on the server you deploy on. If you wish to use a specific port on the server, you can specify this with the <code>--port</code> flag. For example, <code>emily deploy server my-emily-project --port 4242</code> will deploy to port 4242. After you have run the deploy command, a number of files will have been generated, most importantly the deploy script <code>deploy.sh</code>.</p>
-<p>Next you must transfer the project directory to the server. This can be done either by using a version control system like git, or by using a direct transfer protocol like scp. Note that if you have sensitive information in your project, such as user data, you may want to ensure that this part of the project is not transferred to the server.</p>
-<p>Once the project files are on the server, run <code>sh deploy.sh</code> inside the project folder on the server. This will ensure that Docker is installed on the server, and then start a Docker container running the service. Your service is now deployed and ready to be used.</p>
-<p>To use the service, simply send a request to one of the API endpoints using the address of the server. For example, if the IP address of your server is 10.20.30.40, and you have deployed to port 4242, you can access the predict endpoint by sending a request to http://10.20.30.40:4242/api/predict.</p>
-<p><strong>Note</strong>: Servers are often set up by default to not allow access to arbitrary ports. You may therefore have to specifically open up the port you are hosting your service on to allow inbound traffic on that port.</p>
 
 
-<footer class="footline">
+
+
+<footer class=" footline" >
 	
 </footer>
 
+        
+            </div> 
         
         </div>
         
@@ -938,7 +942,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -953,9 +956,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1069,7 +1069,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1089,8 +1088,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1112,10 +1109,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/emily-intro/deploy/test/" title="API test"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/emily-intro/deploy/deploy/" title="Deploy"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/emily-intro/faq/" title="FAQ" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/emily-intro/emily-intro/" title="Getting started with Emily" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1147,4 +1144,3 @@
 
   </body>
 </html>
-
